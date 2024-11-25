@@ -13,96 +13,7 @@ Here is some starter code for the .html
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Users CRUD App</title>
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <h1>Users Management</h1>
-
-    <!-- Form for adding or updating a user -->
-    <h2>Add / Update User</h2>
-    <form id="user-form">
-      <input type="hidden" id="user-id" />
-      <input type="text" id="user-name" placeholder="Name" required />
-      <input
-        type="text"
-        id="user-favorite-color"
-        placeholder="Favorite Color"
-        required
-      />
-      <button type="submit">Save User</button>
-    </form>
-
-    <!-- Table for displaying users -->
-    <h2>All Users</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Favorite Color</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody id="user-table-body"></tbody>
-    </table>
-  </body>
-</html>
-```
-
-```js
-// Fetch and display all users
-async function fetchUsers() {
-  // TODO: Implement fetching users and populating the table
-}
-
-// Handle form submission for adding/updating users
-async function handleFormSubmit(event) {
-  event.preventDefault();
-  // TODO: Implement logic for adding or updating users
-}
-
-// Edit a user
-function editUser(userId, userName, userFavoriteColor) {
-  // TODO: Populate the form with the selected user's details for editing
-}
-
-// Delete a user
-async function deleteUser(userId) {
-  // TODO: Implement deleting a user and refreshing the table
-}
-
-// Add event listener to the form
-document
-  .getElementById("user-form")
-  .addEventListener("submit", handleFormSubmit);
-
-// Initial fetch of users
-fetchUsers();
-```
-
-Here’s an updated version of the exercise where the frontend uses a **table structure** to display users, and each row includes **Edit** and **Delete** buttons in a dedicated column.
-
----
-
-## **Exercise: Create a Frontend for the "Users" API with a Table Interface**
-
-### **Objective:**
-
-Design a frontend that displays users in a table format with `Edit` and `Delete` buttons for each user. Use the Fetch API to interact with the existing "Users" CRUD API.
-
----
-
-### **Starter Code:**
-
-**1. Updated `index.html` Starter File:**
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Users CRUD App</title>
+     <script src="app.js" defer></script>
     <style>
       table {
         width: 100%;
@@ -152,13 +63,10 @@ Design a frontend that displays users in a table format with `Edit` and `Delete`
       />
       <button type="submit">Save User</button>
     </form>
-
-    <script src="app.js"></script>
   </body>
 </html>
 ```
 
-**2. Updated `app.js` Starter File:**
 
 ```javascript
 // Fetch and display all users
