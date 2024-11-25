@@ -118,8 +118,7 @@ fetchUsers();
   <td>Blue</td>
   <td>
     <button>Edit</button>
-    <button>Delete</button>
-    <!-- Dont forget to add event listeners to these buttons -->
+    <!-- Dont forget to add event listeners to the button -->
   </td>
 </tr>
 ```
